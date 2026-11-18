@@ -1,3 +1,5 @@
+package  caneta;
+
 public class Caneta {
 
     private String modelo;
@@ -61,8 +63,12 @@ public class Caneta {
         if (tampada) {
             System.out.print("A caneta esta tampada, destampe");
             System.out.print(" para poder rabiscar.");
+
         } else if (!tampada && carga > 0) {
             System.out.println("Rabiscando...");
+
+        } else {
+            System.out.println("A caneta esta sem carga, recarregue para poder rabiscar.");
         }
     }
 
