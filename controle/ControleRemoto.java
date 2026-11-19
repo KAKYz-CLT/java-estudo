@@ -25,6 +25,9 @@ public class ControleRemoto implements Controlador{
 
     @Override
     public void desligar() {
+        if (this.tocando) {
+            this.tocando = false;
+        }
         this.ligado = false;
     }
 
