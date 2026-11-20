@@ -2,12 +2,14 @@ package  caneta;
 
 public class Caneta {
 
+    // Atributos
     private String modelo;
     private String cor;
     private float ponta;
     private int carga;
     private boolean tampada;
 
+    // Construtores
     public Caneta() {
         this(
         "BIC",
@@ -59,6 +61,7 @@ public class Caneta {
         this.tampada = true;
     }
 
+    // Metodos publicos
     public void rabistar() {
         if (tampada) {
             System.out.print("A caneta esta tampada, destampe");
@@ -72,7 +75,7 @@ public class Caneta {
         }
     }
 
-    protected void destampar() {
+    public void destampar() {
         if (!tampada) {
             System.out.println("A caneta ja esta destampada");
 
@@ -81,7 +84,7 @@ public class Caneta {
         }
     }
 
-    protected void tampar() {
+    public void tampar() {
         if (tampada) {
             System.out.println("A caneta ja esta tampada");
         } else {
@@ -100,12 +103,14 @@ public class Caneta {
         System.out.println("Tampada: " + (tampada ? "Sim" : "Nao"));
     }
 
+    // Getters
     public String getModelo() {return this.modelo;}
     public String getCor() {return this.cor;}
     public float getPonta() {return this.ponta;}
     public int getCarga() {return this.carga;}
     public boolean getTampada() {return this.tampada;}
 
+    // Setters
     public void setModelo(String modelo) {this.modelo = modelo;}
     public void setCor(String cor) {this.cor = cor;}
     public void setPonta(float ponta) {this.ponta = ponta;}

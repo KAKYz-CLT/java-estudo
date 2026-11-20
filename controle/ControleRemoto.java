@@ -1,14 +1,14 @@
 package controle;
 
-// Linkando a interface Controlador com a classe ControleRemoto
+// Integrando a interface Controlador com a classe ControleRemoto
 public class ControleRemoto implements Controlador{
 
-    // Atributos da classe ControleRemoto
+    // Atributos
     private int volume;
     private boolean ligado;
     private boolean tocando;
 
-    // Método construtor da classe ControleRemoto
+    // construtor 
     public ControleRemoto() {
         this.volume = 50;
         this.ligado = false;
@@ -16,9 +16,9 @@ public class ControleRemoto implements Controlador{
         
     }
 
-    // Implementando os métodos da interface Controlador
-    
-    @Override
+    // Metodos publicos sobrescritos da interface Controlador
+
+    @Override 
     public void ligar() {
         this.ligado = true;
     }

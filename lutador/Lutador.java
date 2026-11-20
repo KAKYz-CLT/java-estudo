@@ -2,7 +2,7 @@ package lutador;
 
 public class Lutador {
     
-    // Atributos de um lutador
+    // Atributos
     private String nome;
     private String nacionalidade;
     private int idade;
@@ -13,7 +13,7 @@ public class Lutador {
     private int derrotas;
     private int empates;
 
-    // Metodo construtor
+    // construtor
     public Lutador(
         String nome,String nacionalidade,
         int idade, float altura,
@@ -30,7 +30,7 @@ public class Lutador {
         setEmpates(empates);
     }
 
-    // Metodos de classe
+    // Metodos publicos
     public void apresentar() {
         System.out.println("Lutador: " + this.getNome());
         System.out.println("Nacionalidade: " + this.getNacionalidade());
@@ -62,8 +62,19 @@ public class Lutador {
     public void empatarLuta() {
         this.setEmpates(this.getEmpates() + 1);
     }
-
-    // Setters com validação
+    
+    // Getters
+    public String getNome() { return this.nome; }
+    public String getNacionalidade() { return this.nacionalidade; }
+    public int getIdade() { return this.idade; }
+    public float getAltura() { return this.altura; }
+    public float getPeso() { return this.peso; }
+    public String getCategoria() { return this.categoria; }
+    public int getVitorias() { return this.vitorias; }
+    public int getDerrotas() { return this.derrotas; }
+    public int getEmpates() { return this.empates; }
+    
+    // Setters 
     private void setNome(String nome) {
         if (nome == null || nome.isBlank()) {
             argumentoInvalido("Nome não pode ser nulo ou vazio.");
@@ -139,18 +150,8 @@ public class Lutador {
         this.empates = empates;
     }
 
-    // getters
-    public String getNome() { return this.nome; }
-    public String getNacionalidade() { return this.nacionalidade; }
-    public int getIdade() { return this.idade; }
-    public float getAltura() { return this.altura; }
-    public float getPeso() { return this.peso; }
-    public String getCategoria() { return this.categoria; }
-    public int getVitorias() { return this.vitorias; }
-    public int getDerrotas() { return this.derrotas; }
-    public int getEmpates() { return this.empates; }
 
-    //lancamento de erros
+    // Metodos privados
     private void argumentoInvalido(String mensagem) {
         throw new IllegalArgumentException("[ERROR] " + mensagem);
     }

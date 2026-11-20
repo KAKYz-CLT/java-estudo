@@ -2,14 +2,14 @@ package contabanco;
 
 public class ContaBanco {
     
-    // ATRIBUTOS
+    // Atributos
     private int numConta;
     private String tipo;
     private String dono;
     private double saldo;
     private boolean ativo;
 
-    // CONSTRUTOR
+    // Construtor
     public ContaBanco(int numConta, String tipo, String dono) {
         setNumConta(numConta);
         setTipo(tipo);
@@ -18,7 +18,7 @@ public class ContaBanco {
         this.ativo = true;
     }
     
-    // REGRAS DE NEGOCIO
+    // Metodos publicos
     public void abrirConta() {
         if (ativo) {
             estadoIlegal("A sua conta ja esta aberta");
@@ -67,8 +67,15 @@ public class ContaBanco {
 
         }
     }
+    
+    // Getters
+    public int getNumConta() {return numConta;}
+    public String getTipo() {return tipo;}
+    public String getDono() {return dono;}
+    public double getSaldo() {return saldo;}
+    public boolean isAtivo() {return ativo;}
 
-    // SETTERS
+    // Setters
     private void setDono(String dono) {
         validarString(dono);
 
@@ -95,15 +102,8 @@ public class ContaBanco {
         this.tipo = tipo;
     }
 
-    // GETTERS
-    public int getNumConta() {return numConta;}
-    public String getTipo() {return tipo;}
-    public String getDono() {return dono;}
-    public double getSaldo() {return saldo;}
-    public boolean isAtivo() {return ativo;}
-
-    // VALIDACAO E TRATAMENTO DE ERRO
-
+    
+    // Metodos Privados
     private void validarPositivo(int numero) {
         if (numero <= 0) {
             argumentoIlegal("Valor deve ser positivo!!");
