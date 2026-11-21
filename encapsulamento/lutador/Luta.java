@@ -1,4 +1,4 @@
-package lutador;
+package encapsulamento.lutador;
 
 import java.util.Random;
 

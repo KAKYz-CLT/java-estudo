@@ -1,4 +1,4 @@
-package controle;
+package encapsulamento.controle;
 
 // Integrando a interface Controlador com a classe ControleRemoto
 public class ControleRemoto implements Controlador{

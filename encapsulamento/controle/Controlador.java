@@ -1,4 +1,4 @@
-package controle;
+package encapsulamento.controle;
 
 public interface Controlador {
     

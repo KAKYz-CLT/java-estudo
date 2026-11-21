@@ -1,4 +1,4 @@
-package lutador;
+package encapsulamento.lutador;
 
 public class Lutador {
     

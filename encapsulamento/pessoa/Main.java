@@ -1,4 +1,4 @@
-package pessoa;
+package encapsulamento.pessoa;
 
 public class Main {
     public static void main(String[] args) {

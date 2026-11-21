@@ -1,4 +1,4 @@
-package pessoa;
+package encapsulamento.pessoa;
 
 // Interface
 public interface Publicacao {

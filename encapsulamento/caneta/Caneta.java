@@ -1,4 +1,4 @@
-package  caneta;
+package  encapsulamento.caneta;
 
 public class Caneta {
 

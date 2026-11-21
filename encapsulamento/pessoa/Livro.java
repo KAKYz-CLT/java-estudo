@@ -1,4 +1,4 @@
-package pessoa;
+package encapsulamento.pessoa;
 
 public class Livro implements Publicacao {
     

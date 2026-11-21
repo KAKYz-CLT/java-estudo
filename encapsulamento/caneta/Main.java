@@ -1,4 +1,4 @@
-package caneta;
+package encapsulamento.caneta;
 
 public class Main {
     public static void main(String[] args) {
