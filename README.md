@@ -6,13 +6,13 @@ Repositório de estudo de **Java** com foco em **Programação Orientada a Objet
 
 - [x] Encapsulamento (getters/setters)
 - [x] Construtores e delegação
-- [ ] Herança
+- [x] Herança
 - [ ] Polimorfismo
-- [ ] Abstração
+- [x] Abstração
 
 ## 📁 Estrutura
-- `caneta/Caneta.java` — Encapsulamento, construtores com delegação
-- `caneta/Main.java` — Ponto de entrada / testess
+- `java-estudo/encapsulamento` — Encapsulamento, Abstração e validacoes
+- `java-estudo/heranca` — Encapsulamento, Abstracao, Heranca e validacoes
 
 
  📝 Notas
